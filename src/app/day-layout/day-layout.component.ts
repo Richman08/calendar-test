@@ -6,15 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./day-layout.component.sass']
 })
 export class DayLayoutComponent implements OnInit {
-  hours = []
-  startTime = 0 
-  constructor() { 
-    this.hours = [
-
-    ]
-  }
+  hours = [8,9,10,11,12,1,2,3,4,]
+  
+  constructor() { }
 
   ngOnInit() {
   }
-
+ 
 }
