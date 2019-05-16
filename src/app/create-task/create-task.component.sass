@@ -12,13 +12,15 @@ mwlResizable
     width: 80%
 
     .task-block
+        display: flex
         width: 100%
         position: relative
         background-color: #E2ECF5
         border-left: 2px solid #6E9ECF
         padding: 1px
-        height: 26px
-        top: 0
+        min-height: 15px
+        align-items: flex-start 
+        // top: 0
         // cursor: pointer
 
         .task
@@ -26,47 +28,24 @@ mwlResizable
             font-family: Open Sans
             margin-left: 2px
 
-        .resize-handle-top
-            position: absolute
-            width: 100%
-            height: 5px
-            top: 0
-            cursor: ns-resize
+    .resize-handle-top
+        position: absolute
+        width: 100%
+        height: 10px
+        top: 0
+        cursor: row-resize
 
-        .resize-handle-bottom
-            position: absolute
-            width: 100%
-            height: 5px
-            cursor: ns-resize
-            bottom: 0
-
-
-.test-box
-    width: 100px
-    height: 100px
-    border: 1px solid black
+    .resize-handle-bottom
+        position: absolute
+        width: 100%
+        height: 10px
+        cursor: row-resize
+        bottom: 0
 
 
+// .test-box
+//     width: 100px
+//     height: 100px
+//     border: 1px solid black
 
-// #chat 
-//     position: fixed
-//     background-color: black
-//     opacity: 0.8
-    
-// .chat-resize 
-//     position: absolute
-//     width: 10px
-//     height: 10px
-    
-// #chat-top-left-resize
-//     top: 0px
-//     left: 0px
-// #chat-top-right-resize
-//     top: 0px
-//     right: 0px
-// #chat-bottom-left-resize
-//     bottom: 0px
-//     left: 0px
-// #chat-bottom-right-resize
-//     bottom: 0px
-//     right: 0px
+
